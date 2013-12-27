@@ -9,11 +9,10 @@ apt-get install git-core sudo lsb-release -y
 CODENAME=$(lsb_release -sc)
 PUPPET_VERSION='2.7.24'
 
-pushd /tmp
-    wget -q http://apt.puppetlabs.com/puppetlabs-release-$CODENAME.deb
-    dpkg -i puppetlabs-release-$CODENAME.deb
-    rm -f puppetlabs-release-$CODENAME.deb
-    apt-get update
-    apt-get install puppet-common=$PUPPET_VERSION-1puppetlabs1 -y
-    apt-get install puppet=$PUPPET_VERSION-1puppetlabs1 -y
-popd
+cd /tmp
+wget -q http://apt.puppetlabs.com/puppetlabs-release-$CODENAME.deb
+dpkg -i puppetlabs-release-$CODENAME.deb
+rm -f puppetlabs-release-$CODENAME.deb
+apt-get update
+apt-get install puppet-common=$PUPPET_VERSION-1puppetlabs1 -y
+apt-get install puppet=$PUPPET_VERSION-1puppetlabs1 -y
