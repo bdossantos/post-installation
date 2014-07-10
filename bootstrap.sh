@@ -8,6 +8,7 @@ apt-get install git-core sudo lsb-release -y
 
 CODENAME=$(lsb_release -sc)
 PUPPET_VERSION='3.6.2-1puppetlabs1'
+FACTER_VERSION='2.1.0-1puppetlabs1'
 
 cd /tmp
 wget -q http://apt.puppetlabs.com/puppetlabs-release-$CODENAME.deb
@@ -15,4 +16,4 @@ dpkg -i puppetlabs-release-$CODENAME.deb
 rm -f puppetlabs-release-$CODENAME.deb
 apt-get update
 apt-get install puppet-common=$PUPPET_VERSION puppet=$PUPPET_VERSION \
-                libaugeas-ruby -y
+                facter=$FACTER_VERSION libaugeas-ruby -y
