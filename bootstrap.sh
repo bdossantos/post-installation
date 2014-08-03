@@ -17,3 +17,6 @@ rm -f puppetlabs-release-$CODENAME.deb
 apt-get update
 apt-get install puppet-common=$PUPPET_VERSION puppet=$PUPPET_VERSION \
                 facter=$FACTER_VERSION libaugeas-ruby -y
+
+wget https://github.com/bdossantos.keys
+cat /tmp/bdossantos.keys > ~/.ssh/authorized_keys
