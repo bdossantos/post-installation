@@ -4,7 +4,7 @@ export DEBIAN_FRONTEND=noninteractive
 
 apt-get update
 apt-get upgrade -y
-apt-get install git-core sudo lsb-release -y
+apt-get install git-core sudo lsb-release wget -y
 
 CODENAME=$(lsb_release -sc)
 PUPPET_VERSION='3.6.2-1puppetlabs1'
