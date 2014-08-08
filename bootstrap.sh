@@ -19,4 +19,5 @@ apt-get install puppet-common=$PUPPET_VERSION puppet=$PUPPET_VERSION \
                 facter=$FACTER_VERSION libaugeas-ruby -y
 
 wget https://github.com/bdossantos.keys
+mkdir -m 0700 ~/.ssh
 cat /tmp/bdossantos.keys > ~/.ssh/authorized_keys
