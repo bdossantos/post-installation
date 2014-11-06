@@ -1,3 +1,5 @@
+# YOLO
+
 ```bash
-wget https://raw.github.com/ArthurMediaGroup/post-installation/master/bootstrap.sh -O - | sh
+wget https://raw.github.com/bdossantos/post-installation/master/bootstrap.sh -O - | sh
 ```
