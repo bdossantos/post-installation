@@ -7,8 +7,8 @@ apt-get upgrade -y
 apt-get install git-core sudo lsb-release wget -y
 
 CODENAME=$(lsb_release -sc)
-PUPPET_VERSION='3.7.3-1puppetlabs1'
-FACTER_VERSION='2.3.0-1puppetlabs1'
+PUPPET_VERSION='3.7.4-1puppetlabs1'
+FACTER_VERSION='2.4.0-1puppetlabs1'
 
 cd /tmp
 wget -q "http://apt.puppetlabs.com/puppetlabs-release-${CODENAME}.deb"
