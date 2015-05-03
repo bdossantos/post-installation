@@ -7,7 +7,7 @@ apt-get upgrade -y
 apt-get install git-core sudo lsb-release wget -y
 
 CODENAME=$(lsb_release -sc)
-PUPPET_VERSION='3.7.4-1puppetlabs1'
+PUPPET_VERSION='3.7.5-1puppetlabs1'
 FACTER_VERSION='2.4.3-1puppetlabs1'
 
 cd /tmp
