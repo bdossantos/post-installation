@@ -13,8 +13,8 @@ apt-get install git-core sudo lsb-release wget -y
 CODENAME=$(lsb_release -sc)
 
 cd /tmp
-wget -q "http://apt.puppetlabs.com/puppetlabs-release-${CODENAME}.deb"
-dpkg -i "puppetlabs-release-${CODENAME}.deb"
+wget -q "http://apt.puppetlabs.com/puppet-release-${CODENAME}.deb"
+dpkg -i "puppet-release-${CODENAME}.deb"
 
 apt-get update
 apt-get install puppet-common puppet facter libaugeas-ruby sudo -y
