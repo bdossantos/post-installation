@@ -14,5 +14,5 @@ cat /tmp/bdossantos.keys > ~/.ssh/authorized_keys
 apt-get update
 apt-get -y upgrade
 apt-get -y install git-core sudo lsb-release wget
-apt-get -y purge noderig beamium ovh-rtm-metrics-toolkit ovh-rtm-binaries
+apt-get -y purge exim4* noderig beamium ovh-rtm-metrics-toolkit ovh-rtm-binaries
 apt-get -y autoremove
